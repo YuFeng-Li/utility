@@ -56,11 +56,12 @@ call plug#end()
 
 set background=dark
 colorscheme gruvbox
-let g:seiya_auto_enable=1
 hi CursorLineNr ctermfg=45 cterm=bold
 
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <C-g> :GFiles<CR>
 nnoremap <silent> <C-o> :Buffers<CR>
 nnoremap <silent> <C-l> :set syntax=xml<CR>
-nnoremap <silent> <C-f> :Rg<CR>
+nnoremap <silent> <C-f> :!Rg
+nnoremap <silent> <C-d> :colorscheme fahrenheit <bar> :SeiyaEnable<CR>
+nnoremap <silent> <C-e> :colorscheme gruvbox <bar> :SeiyaDisable<CR>
