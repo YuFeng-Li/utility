@@ -52,16 +52,18 @@ Plug 'mbbill/undotree'
 Plug 'https://github.com/miyakogi/seiya.vim.git'
 Plug 'fcpg/vim-fahrenheit'
 Plug 'https://github.com/xavierd/clang_complete.git'
+Plug 'https://github.com/itchyny/vim-grep.git'
 call plug#end()
 
 set background=dark
 colorscheme gruvbox
+let g:seiya_auto_enable=1
 hi CursorLineNr ctermfg=45 cterm=bold
 
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <C-g> :GFiles<CR>
 nnoremap <silent> <C-o> :Buffers<CR>
-nnoremap <silent> <C-l> :set syntax=xml<CR>
-nnoremap <silent> <C-f> :!Rg
-nnoremap <silent> <C-d> :colorscheme fahrenheit <bar> :SeiyaEnable<CR>
-nnoremap <silent> <C-e> :colorscheme gruvbox <bar> :SeiyaDisable<CR>
+nnoremap <silent> <C-d> :SeiyaEnable<CR> <bar> :colorscheme fahrenheit<CR>
+nnoremap <silent> <C-e> :SeiyaDisable<CR> <bar> :colorscheme gruvbox<CR>
+nnoremap <silent> <C-f> :vsplit<CR>
+nnoremap <silent> <C-e> :split<CR>
