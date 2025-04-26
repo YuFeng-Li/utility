@@ -66,4 +66,3 @@ nnoremap <silent> <C-o> :Buffers<CR>
 nnoremap <silent> <C-d> :SeiyaEnable<CR> <bar> :colorscheme fahrenheit<CR>
 nnoremap <silent> <C-e> :SeiyaDisable<CR> <bar> :colorscheme gruvbox<CR>
 nnoremap <silent> <C-f> :vsplit<CR>
-nnoremap <silent> <C-e> :split<CR>
